@@ -1,4 +1,118 @@
-h1 span {
-    color: #037bc0;
-    color: #037bc0;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  font-size: 1.6rem;
+  line-height: 2;
 }
+
+
+
+h1, h2 , h3{
+font-family: 'Playfair Display', serif;
+margin: 3rem 0 5rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+  max-width: 100%;
+display: block;
+}
+
+
+
+/* selectores globales fin  */
+
+
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .nombre-sitio span{
+    color: #037bc0;
+  }
+
+  .container{
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .container-navprincipal{
+    border-top: .1rem solid #e1e1e1;
+    }
+
+  .nav-principal{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+  }
+
+  /* header y nav fin */
+  
+  .listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+
+.categorias h2{
+  text-align: center;
+}
+.categorias a{
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.categorias a:hover{
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
+}
+
+    /* categorias fin */
+
+    
+    .sobre-nosotros{
+      display: block;
+      font-size: 1.5rem;
+    }
+    .sobre-nosotros{
+      background-image: linear-gradient(to right, transparent 50%, #034 50%, #037cc0 100% ), url(../img/nosotros.jpg);
+      background-position: left center;
+      padding: 7rem 0;
+      background-repeat: no-repeat;
+      background-size: 100% , 70rem;
+    }
+
+    .sobre-nosotros-grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 8rem;
+    }
+
+    .texto-nosotros{
+      grid-column: 2/3;
+      color: #fff;
+    }
+
+/* sobre nosotros */

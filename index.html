@@ -5,47 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendiendo HTML</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kurale&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <header>
-      <h1>Tiendas <span>Muebles</span> </h1>
+      <h1 class="nombre-sitio">Tiendas <span>Muebles</span></h1>
     </header>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="tienda.html">Tienda</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <section>
+    <div class="container-navprincipal">
+      <nav class="nav-principal container">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <div class="hero"></div>
+    <section class="container categorias">
       <h2>Categorias de Productos</h2>
-      <div>
-        <img src="./img/categoria1.jpg" alt="Imagen Categoria" /><a href="#"
-          >Oficina</a
-        >
-      </div>
-      <div>
-        <img src="./img/categoria2.jpg" alt="Imagen Categoria" /><a href="#"
-          >Hogar</a
-        >
-      </div>
-      <div>
-        <img src="./img/categoria3.jpg" alt="Imagen Categoria" /><a href="#"
-          >Cocina</a
-        >
+      <div class="listado-categorias">
+        <div class="categorias">
+          <img src="./img/categoria1.jpg" alt="Imagen Categoria" /><a href="#"
+            >Oficina</a
+          >
+        </div>
+        <div class="categorias">
+          <img src="./img/categoria2.jpg" alt="Imagen Categoria" /><a href="#"
+            >Hogar</a
+          >
+        </div>
+        <div class="categorias">
+          <img src="./img/categoria3.jpg" alt="Imagen Categoria" /><a href="#"
+            >Cocina</a
+          >
+        </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
-          quod vero assumenda id tenetur dolores, mollitia voluptatibus suscipit
-          error placeat? Quo unde repudiandae, qui ab suscipit recusandae fugiat
-          repellendus harum!
-        </p>
+    <section class="sobre-nosotros">
+      <div class="container sobre-nosotros-grid">
+        <div class="texto-nosotros">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium quod vero assumenda id tenetur dolores, mollitia
+            voluptatibus suscipit error placeat? Quo unde repudiandae, qui ab
+            suscipit recusandae fugiat repellendus harum!
+          </p>
+        </div>
       </div>
     </section>
     <main>
@@ -191,4 +205,4 @@
       <p>Todos los derechos reservados</p>
     </footer>
   </body>
-  </html>
+</html>
